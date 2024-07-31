@@ -26,7 +26,7 @@ jobs:
         run: |
           git clone https://github.com/gzuidhof/coi-serviceworker.git
           mv coi-serviceworker/coi-serviceworker.js coi-serviceworker.js
-          sed -i '3 i <script src="coi-serviceworker.js"></script>' index.html
+          sed -i '4 i <script src="coi-serviceworker.js"></script>' index.html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.3
